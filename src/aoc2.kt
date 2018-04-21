@@ -30,7 +30,7 @@ class Logic {
     }
 
     fun version1(input: List<List<Int>>): Int {
-        return input.sumBy { it.max()!! - it.min()!! }
+        return input.sumBy { it.max()!!.minus(it.min()!!) }
     }
 
     fun version2(input: List<List<Int>>): Int {
